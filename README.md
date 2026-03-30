@@ -155,7 +155,7 @@ Results are averaged across folds (if using k-fold) and saved to
 **Q3:** Report requirements (`SOLUTION.md`)<br>
 **A3:** Your report must include:<br>
 - Reproducibility instructions: exact commands to run your solution and acquire the same `predictions.csv`, required environment (if any), any important implementation details needed to reproduce your result.
-- Final solution description: what components you modified, what your final approach is, why you made these choices, what contributed most to improving the metric.
+- Final solution description: What components you modified ? What your final approach is ? Why you made these choices ? What contributed most to improving the metric ?
 - Experiments and failed attempts: What ideas you tried but did not include in the final solution ? Why they did not work or were discarded ?
 
 **Q4:** Reproducibility<br>
