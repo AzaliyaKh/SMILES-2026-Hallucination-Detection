@@ -298,19 +298,6 @@ for _ in range(200):
 
 ## Final result
 
-The best result was obtained with:
-
-```text
-aggregation.py:
-last layer + last real token
-
-probe.py:
-Linear(input_dim, 256)
-ReLU
-Dropout(0.45)
-Linear(256, 1)
-```
-
 Final evaluation result:
 
 ```text
