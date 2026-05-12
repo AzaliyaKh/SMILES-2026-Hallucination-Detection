@@ -45,14 +45,12 @@ def aggregate(
     # STUDENT: Replace or extend the aggregation below.
     # ------------------------------------------------------------------
 
-    # Default: last real token of the final transformer layer.
-    layer = hidden_states[-1]          # (seq_len, hidden_dim)
+    layer = hidden_states[-1]
 
-    # Find the index of the last real (non-padding) token.
-    real_positions = attention_mask.nonzero(as_tuple=False)  # (n_real, 1)
-    last_pos = int(real_positions[-1].item())                 # scalar index
+    real_positions = attention_mask.nonzero(as_tuple=False).squeeze(-1)
+    last_pos = int(real_positions[-1].item())
 
-    feature = layer[last_pos]          # (hidden_dim,)
+    feature = layer[last_pos]
 
     return feature
     # ------------------------------------------------------------------
